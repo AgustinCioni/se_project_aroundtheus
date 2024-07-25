@@ -33,11 +33,13 @@
 }
 
 .profile__add-button {
-  background: transparent url(../images/Add\ Button.svg) center no-repeat;
+  background: transparent url(../images/plus\ sign.png) center no-repeat;
   width: 150px;
   height: 50px;
-  border: 2px;
-  margin-left: auto;
+  margin: 0 0 0 auto;
+  padding: 0;
+  border: solid 2px;
+  border-color: white;
 }
 
 .profile__title {
@@ -61,7 +63,7 @@
   .profile {
     flex-direction: column;
     padding: 0;
-    margin-top: 40px;
+    margin: 40px auto 0;
   }
 
   .profile__info {
@@ -72,7 +74,7 @@
   }
 
   .profile__edit-button {
-    justify-self: center;
+    margin-right: 20px;
   }
 
   .profile__subtitle {
@@ -86,7 +88,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 628px) {
   .profile {
     flex-direction: column;
     padding: 0;
@@ -101,8 +103,17 @@
     justify-content: center;
   }
 
+  .profile__title {
+    font-size: 22px;
+    text-align: end;
+  }
+
+  .profile__subtitle {
+    font-size: 14px;
+  }
+
   .profile__edit-button {
-    justify-self: center;
+    margin-right: 20px;
   }
 
   .profile__subtitle {
@@ -113,5 +124,6 @@
   .profile__add-button {
     margin: 20px;
     padding: 0;
+    width: 282px;
   }
 }
