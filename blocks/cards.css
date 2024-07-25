@@ -37,19 +37,25 @@
 }
 
 .card__title {
-  margin: 0;
+  margin: 2px;
   padding: 0;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
   max-width: 373px;
 }
 
 .card__like-button {
-  background: transparent url(../images/heart\(2\).svg) center;
+  background: transparent center url(../images/heart\(2\).svg);
   border: none;
-  width: 21px;
+  width: 20px;
   height: 18px;
   padding: 0;
   margin: 0;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.card__like-button:hover {
+  opacity: 0.5;
 }

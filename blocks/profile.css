@@ -28,8 +28,16 @@
   height: 24px;
   width: 24px;
   grid-area: button;
-  border: 1px;
+  border: solid 1px;
+  border-color: white;
   margin: 0;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.profile__edit-button:hover {
+  opacity: 0.5;
 }
 
 .profile__add-button {
@@ -40,6 +48,12 @@
   padding: 0;
   border: solid 2px;
   border-color: white;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.profile__add-button:hover {
+  opacity: 0.5;
 }
 
 .profile__title {
