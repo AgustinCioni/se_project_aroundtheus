@@ -1,63 +1,61 @@
-.card {
-  margin-top: 40px;
-}
-
 .card__list {
-  list-style-type: none;
-  display: grid;
-  justify-content: center;
-  border-radius: 25px;
-  grid-template-columns: repeat(auto-fit, 282px);
-  grid-gap: 20px 17px;
-  padding: 0;
-  margin: 0;
-}
-
-.card__list_location {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
-.card__image {
-  width: 282px;
-  height: 282px;
-  border-radius: 10px 10px 0 0;
-}
-
-.card__container {
-  display: flex;
-  background-color: white;
-  align-items: center;
-  justify-content: space-between;
-  color: black;
-  margin: 0;
-  padding: 25px 20px 25px 20px;
-  border-radius: 0 0 10px 10px;
-}
-
-.card__title {
-  margin: 2px;
-  padding: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-width: 373px;
-}
-
-.card__like-button {
-  background: transparent center url(../images/heart\(2\).svg);
-  border: none;
-  width: 20px;
-  height: 18px;
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: opacity 0.5s;
-  flex-shrink: 0;
-  flex-basis: 20px;
-}
-
-.card__like-button:hover {
-  opacity: 0.5;
-}
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    border-radius: 25px;
+    grid-template-columns: repeat(auto-fit, 282px);
+    grid-gap: 20px 17px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  .card__image {
+    width: 282px;
+    height: 282px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card__container {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    margin: 0;
+    padding: 25px 20px 25px 20px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .card__title {
+    margin: 2px;
+    padding: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 373px;
+  }
+  
+  .card__like-button {
+    background: transparent center url(../images/heart\(2\).svg);
+    border: none;
+    width: 20px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+    flex-shrink: 0;
+    flex-basis: 20px;
+    cursor: pointer;
+  }
+  
+  .card__like-button:hover {
+    opacity: 0.5;
+  }
+  
