@@ -11,8 +11,7 @@ This project showcases various locations around the United States through a visu
 ### Technologies and Techniques Used:
 
 - **HTML:** Structure of the web page.
-- **CSS:** Styling and layout, including Flexbox and Grid for layout and BEM naming conventions for class names.
-- **JavaScript:** Interactivity (e.g., like button functionality).
+- **CSS:** Styling and layout, including Flexbox and Grid for layout and   BEM naming conventions for class names.
 - **Responsive Design:** Ensuring the website looks good on all devices.
 
 ### Deployment Link:
