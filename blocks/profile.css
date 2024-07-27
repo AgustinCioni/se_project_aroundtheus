@@ -129,21 +129,26 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    min-width: 282px;
+    max-height: 50px;
   }
 
   .profile__title {
     font-size: 22px;
     line-height: 26.63px;
     text-align: end;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .profile__subtitle {
     font-size: 14px;
     line-height: 16.94px;
-  }
-
-  .profile__subtitle {
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .profile__add-button {
