@@ -11,6 +11,11 @@
   align-items: center;
   color: black;
   padding: 19px;
+  display: none;
+}
+
+.modal_opened {
+  display: flex;
 }
 
 .modal__container {
