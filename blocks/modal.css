@@ -34,6 +34,7 @@
   left: calc(100% + 5px);
   width: 40px;
   height: 40px;
+  padding: 0;
   cursor: pointer;
   background-repeat: none;
   background-size: contain;
