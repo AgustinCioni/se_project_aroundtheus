@@ -100,7 +100,7 @@
   }
 
   .modal__close {
-    left: 95%;
+    left: 90%;
     bottom: calc(100% + 13px);
     width: 26px;
     height: 26px;
