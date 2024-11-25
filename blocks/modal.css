@@ -86,6 +86,36 @@
   cursor: pointer;
 }
 
+.modal_type_image .modal__container {
+  background-color: transparent;
+  max-width: 75vw;
+  max-height: 75vh;
+  position: relative;
+  padding: 0;
+}
+
+.modal_type_image .modal__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.modal_type_image .modal__caption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.modal_type_image .modal__close {
+  position: absolute;
+  top: -45px;
+  right: -45px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 628px) {
   .modal__container {
     width: 282px;
