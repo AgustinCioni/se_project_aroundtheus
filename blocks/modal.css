@@ -11,11 +11,16 @@
   align-items: center;
   color: black;
   padding: 19px;
-  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal_opened {
   display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__container {
@@ -23,8 +28,8 @@
   padding: 0 36px;
   border-radius: 10px;
   position: relative;
-  width: 430px;
-  height: 330px;
+  width: auto;
+  height: auto;
 }
 
 .modal__close {
@@ -139,5 +144,46 @@
   .modal__button {
     padding: 0;
     margin: 15.26px 0 0;
+  }
+}
+
+/* Media query for devices with a max width of 768px (tablets and smaller) */
+@media screen and (max-width: 768px) {
+  .modal_type_image .modal__container {
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 10px;
+  }
+
+  .modal_type_image .modal__close {
+    top: -35px; /* Adjust the button's position */
+    right: -35px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal_type_image .modal__caption {
+    font-size: 14px; /* Make the caption slightly smaller */
+    margin-top: 8px;
+  }
+}
+
+/* Media query for devices with a max width of 480px (phones and smaller) */
+@media screen and (max-width: 480px) {
+  .modal_type_image .modal__container {
+    max-width: 95vw;
+    max-height: 85vh;
+    padding: 8px;
+  }
+
+  .modal_type_image .modal__close {
+    top: -30px; /* Adjust further for very small screens */
+    right: -30px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .modal_type_image .modal__caption {
+    font-size: 12px; /* Reduce caption size further for small screens */
   }
 }
