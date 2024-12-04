@@ -101,19 +101,22 @@
       </div>
     </div>
 
-        <!-- Add Image modal -->
-        <div class="modal modal_type_image" id="image-modal">
-          <div class="modal__container">
-            <button class="modal__close" id="image-modal-close"></button>
-            <img class="modal__image" src="" alt="" />
-            <p class="modal__caption"></p>
-          </div>
-        </div>
-        
+    <!-- Add Image modal -->
+    <div class="modal modal_type_image" id="modal-image">
+      <div class="modal__container-preview">
+        <button class="modal__close" id="image-modal-close"></button>
+        <img class="modal__image" src="" alt="" />
+        <p class="modal__caption"></p>
+      </div>
+    </div>
 
     <template id="card-template">
       <li class="card">
-        <button type="button" class="card__delete-button" id="card__delete-button"></button>
+        <button
+          type="button"
+          class="card__delete-button"
+          id="card__delete-button"
+        ></button>
         <img class="card__image" src="" alt="" />
         <div class="card__container">
           <h2 class="card__title"></h2>
