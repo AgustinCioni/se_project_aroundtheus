@@ -64,15 +64,32 @@
             type="text"
             name="title"
             value="Jacques Cousteau"
+            required
+            minlength="2"
+            maxlength="40"
           />
+          <span class="modal__error" id="profile-title-input-error"></span>
           <input
             class="modal__input"
             id="profile-description-input"
             type="text"
             name="description"
             value="Explorer"
+            required
+            minlength="2"
+            maxlength="200"
           />
-          <button type="submit" class="modal__button">Save</button>
+          <span
+            class="modal__error"
+            id="profile-description-input-error"
+          ></span>
+          <button
+            type="submit"
+            class="modal__button modal__button_disabled"
+            disabled
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -88,19 +105,30 @@
             name="title"
             type="text"
             placeholder="Title"
+            required
+            minlength="1"
+            maxlength="30"
           />
+          <span class="modal__error" id="New-place-title-input-error"></span>
           <input
             class="modal__input"
             id="Image-link-input"
-            type="text"
+            type="url"
             name="url"
             placeholder="Image link"
+            required
           />
-          <button type="submit" class="modal__button">Create</button>
+          <span class="modal__error" id="Image-link-input-error"></span>
+          <button
+            type="submit"
+            class="modal__button modal__button_disabled"
+            disabled
+          >
+            Create
+          </button>
         </form>
       </div>
     </div>
-
     <!-- Add Image modal -->
     <div class="modal modal_type_image" id="modal-image">
       <div class="modal__container-preview">
@@ -126,5 +154,6 @@
     </template>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/formValidation.js"></script>
   </body>
 </html>

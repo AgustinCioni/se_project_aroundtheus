@@ -64,10 +64,12 @@ const modalCaption = imageModal.querySelector(".modal__caption");
 /*------------------------------------------------------------*/
 function openPopup(popup) {
   popup.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscClose);
 }
 
 function closePopup(popup) {
   popup.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscClose);
 }
 
 function getCardElement(cardData) {
@@ -115,6 +117,15 @@ function closeImageModal() {
   closePopup(imageModal);
   modalImage.src = "";
   modalCaption.textContent = "";
+}
+
+function handleEscClose(event) {
+  if (event.key === "Escape") {
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) {
+      closePopup(openModal);
+    }
+  }
 }
 /*------------------------------------------------------------*/
 /*                    Event Handlers                          */
@@ -166,3 +177,15 @@ closeAddCardModalButton.addEventListener("click", () =>
 addCardForm.addEventListener("submit", handleAddCardModalSubmit);
 
 imageModalCloseButton.addEventListener("click", closeImageModal);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modals = document.querySelectorAll(".modal");
+
+  modals.forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        closePopup(modal);
+      }
+    });
+  });
+});
