@@ -217,9 +217,8 @@
 /* Media query for devices with a max width of 480px (phones and smaller) */
 @media screen and (max-width: 320px) {
   .modal__container {
-    width: 90%;
-    max-width: 282px;
-    margin: 0 auto;
+    width: 282px;
+    height: 322px;
     padding: 0 22px;
   }
 
