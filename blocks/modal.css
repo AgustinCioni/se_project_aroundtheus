@@ -217,8 +217,9 @@
 /* Media query for devices with a max width of 480px (phones and smaller) */
 @media screen and (max-width: 320px) {
   .modal__container {
-    width: 282px;
-    height: 322px;
+    width: 90%;
+    max-width: 282px;
+    margin: 0 auto;
     padding: 0 22px;
   }
 
@@ -232,6 +233,10 @@
     bottom: calc(100% + 13px);
     width: 26px;
     height: 26px;
+  }
+
+  .modal__input-container {
+    height: 27px;
   }
 
   .modal__button {
